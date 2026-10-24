@@ -40,9 +40,8 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
         return configuration.getAuthenticationManager();
     }
-    @Configuration
+ @Configuration
 @EnableWebSecurity
-public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -55,7 +54,7 @@ public class SecurityConfig {
             );
         return http.build();
     }
-}
+
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
